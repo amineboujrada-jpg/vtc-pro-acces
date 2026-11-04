@@ -1,0 +1,39 @@
+# VTC Rentable
+
+> Application de gestion gratuite pour les chauffeurs VTC en France, créée par un chauffeur VTC. Elle calcule le revenu net réel (Uber, Bolt, Heetch, courses privées), le € / heure et le € / km selon le statut (auto-entrepreneur, société ou salarié en rattachement), et génère les bons de commande PDF. Le site propose aussi des calculateurs gratuits sans inscription et des guides pratiques à jour des taux 2026.
+
+Tous les contenus sont en français et concernent la réglementation et la fiscalité françaises. Les résultats des calculateurs sont indicatifs et ne remplacent pas l'avis d'un expert-comptable.
+
+## Application
+
+- [Application VTC gratuite](https://vtcrentable.com/application-vtc/): suivi quotidien du chiffre d'affaires, des dépenses, des heures et des kilomètres, avec calcul automatique du revenu net
+- [Logiciel VTC gratuit](https://vtcrentable.com/logiciel-vtc-gratuit/): présentation de l'outil de gestion pour chauffeurs indépendants, utilisable sur téléphone et ordinateur
+- [Gestion des dépenses VTC](https://vtcrentable.com/gestion-depenses-vtc/): carburant, assurance, entretien, charges fixes et contrôle des virements des plateformes
+- [Rentabilité Uber et Bolt](https://vtcrentable.com/rentabilite-uber-bolt/): mesurer ce que rapporte réellement chaque plateforme après commissions et charges
+- [Calculateur de rentabilité VTC](https://vtcrentable.com/calculateur-rentabilite-vtc/): revenu net, € / heure et € / km à partir de ses propres chiffres
+
+## Calculateurs gratuits
+
+- [Tous les calculateurs](https://vtcrentable.com/calculateurs/): liste des simulateurs pour chauffeurs VTC
+- [Revenu net VTC](https://vtcrentable.com/calculateurs/revenu-net-vtc/): revenu net 2026 selon le statut, avec ACRE et versement libératoire
+- [Prix minimum d'une course VTC](https://vtcrentable.com/calculateurs/prix-minimum-course-vtc/): seuil en dessous duquel une course n'est pas rentable
+- [Coût de la voiture au km](https://vtcrentable.com/calculateurs/cout-voiture-km-vtc/): coût réel du véhicule par kilomètre
+- [Achat ou location de voiture VTC](https://vtcrentable.com/calculateurs/achat-ou-location-voiture-vtc/): comparaison achat, LOA et location
+- [Comparateur de statuts VTC](https://vtcrentable.com/calculateurs/comparateur-statut-vtc/): auto-entrepreneur, société ou rattachement
+- [Objectif de chiffre d'affaires VTC](https://vtcrentable.com/calculateurs/objectif-chiffre-affaires-vtc/): chiffre d'affaires à réaliser pour atteindre un revenu net cible
+- [Seuil de TVA VTC](https://vtcrentable.com/calculateurs/seuil-tva-vtc/): suivi du seuil de franchise en base de TVA
+- [Comparateur de plateformes VTC](https://vtcrentable.com/calculateurs/comparateur-plateformes-vtc/): commissions Uber, Bolt, Heetch et FreeNow
+
+## Guides
+
+- [Blog VTC Rentable](https://vtcrentable.com/blog/): guides pratiques pour chauffeurs VTC
+- [Devenir chauffeur VTC](https://vtcrentable.com/blog/devenir-chauffeur-vtc/): étapes, carte VTC et démarches
+- [Charges d'un chauffeur VTC auto-entrepreneur en 2026](https://vtcrentable.com/blog/charges-chauffeur-vtc-auto-entrepreneur/): cotisations URSSAF, ACRE, versement libératoire et plafonds
+- [Calcul du revenu net VTC](https://vtcrentable.com/blog/calcul-revenu-net-vtc/): méthode de calcul pas à pas avec un exemple chiffré
+- [Salaire d'un chauffeur VTC en 2026](https://vtcrentable.com/blog/salaire-chauffeur-vtc/): net réel par mois et par heure, trois exemples chiffrés et chiffres officiels Uber
+- [Bon de commande VTC](https://vtcrentable.com/blog/bon-de-commande-vtc/): obligation de réservation préalable et contenu du bon
+
+## Optional
+
+- [Modèles gratuits](https://vtcrentable.com/modeles/): tableau de suivi et checklist des frais
+- [Qui sommes-nous](https://vtcrentable.com/qui-sommes-nous/): l'histoire du projet, créé par un chauffeur VTC
