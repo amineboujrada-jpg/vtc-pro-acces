@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1116">
+<title>Calculateur de rentabilité VTC : ton € / heure et ton € / km</title>
+<meta name="description" content="Calcule gratuitement ta rentabilité de chauffeur VTC : € / heure et € / km en brut et en net, après carburant, frais, charges fixes et cotisations.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://vtcrentable.com/calculateur-rentabilite-vtc/">
+<link rel="icon" href="/vtc-pro-acces/site/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/vtc-pro-acces/site/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/vtc-pro-acces/site/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VTC Rentable">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://vtcrentable.com/calculateur-rentabilite-vtc/">
+<meta property="og:title" content="Calculateur de rentabilité VTC : ton € / heure et ton € / km">
+<meta property="og:description" content="Calcule gratuitement ta rentabilité de chauffeur VTC : € / heure et € / km en brut et en net, après carburant, frais, charges fixes et cotisations.">
+<meta property="og:image" content="https://app.vtcrentable.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,700..900&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@600&display=swap">
+<link rel="stylesheet" href="/vtc-pro-acces/site/assets/article.css">
+<link rel="stylesheet" href="/vtc-pro-acces/site/assets/calc.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Calculateur de rentabilité VTC par heure et par kilomètre", "url": "https://vtcrentable.com/calculateur-rentabilite-vtc/", "description": "Calcule gratuitement ta rentabilité de chauffeur VTC : € / heure et € / km en brut et en net, après carburant, frais, charges fixes et cotisations.", "inLanguage": "fr-FR", "publisher": {"@type": "Organization", "name": "VTC Rentable", "url": "https://vtcrentable.com/", "logo": "https://vtcrentable.com/icon-192.png"}, "applicationCategory": "FinanceApplication", "operatingSystem": "Navigateur web", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://vtcrentable.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculateur de rentabilité VTC", "item": "https://vtcrentable.com/calculateur-rentabilite-vtc/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment calculer son € / heure de chauffeur VTC ?", "acceptedAnswer": {"@type": "Answer", "text": "Divise ce que tu as encaissé par tes heures travaillées pour le brut. Pour le net, retire d'abord ton carburant, tes frais, tes charges fixes et tes cotisations, puis divise par les mêmes heures."}}, {"@type": "Question", "name": "Quelle part du chiffre d'affaires part dans le carburant ?", "acceptedAnswer": {"@type": "Answer", "text": "Le plus souvent entre 8 et 10 % du chiffre d'affaires pour une hybride. Note tes pleins pendant quelques semaines pour connaître ta vraie part."}}, {"@type": "Question", "name": "Faut-il compter les heures d'attente ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Une heure connecté sans course reste une heure de travail : la compter donne un € / heure réaliste."}}]}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="Navigation principale">
+  <div class="wrap">
+    <a class="logo" href="/vtc-pro-acces/site/"><img src="/vtc-pro-acces/site/icon-192.png" alt="" width="30" height="30">VTC <span>Rentable</span></a>
+    <ul>
+      <li><a href="/vtc-pro-acces/site/">L'appli</a></li>
+      <li><a href="/vtc-pro-acces/site/calculateurs/">Calculateurs</a></li>
+      <li><a href="/vtc-pro-acces/site/blog/">Blog</a></li>
+      <li><a href="/vtc-pro-acces/site/qui-sommes-nous/">Qui sommes-nous</a></li>
+    </ul>
+    <a class="btn" href="/vtc-pro-acces/">Ouvrir l'appli</a>
+  </div>
+</nav>
+
+<header class="head">
+  <div class="read">
+    <ol class="crumbs"><li><a href="/vtc-pro-acces/site/">Accueil</a></li><li>Calculateur de rentabilité VTC</li></ol>
+    <h1>Calculateur de rentabilité VTC par heure et par kilomètre</h1>
+    <p class="lede">Ce que tu gagnes vraiment pour une heure de travail et pour un kilomètre roulé, avant et après tes frais.</p>
+  </div>
+</header>
+<main>
+<article class="read">
+<form id="rent" class="calc" novalidate>
+  <p class="note" style="margin:0 0 14px">Prérempli avec une semaine type : remplace par tes chiffres, le résultat se met à jour tout seul.</p>
+  <fieldset>
+    <legend>Ta période (semaine ou mois)</legend>
+    <div class="row">
+      <label for="ca"><span>Ce que tu as encaissé (€)</span><small>Plateformes après commission, courses privées, pourboires</small><input id="ca" type="number" inputmode="decimal" min="0" step="1" value="1150"></label>
+      <label for="h"><span>Heures travaillées</span><small>Connecté, en attente compris</small><input id="h" type="number" inputmode="decimal" min="0" step="1" value="48"></label>
+      <label for="km"><span>Kilomètres parcourus</span><small>À vide compris</small><input id="km" type="number" inputmode="decimal" min="0" step="1" value="1340"></label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Ce que ça t'a coûté</legend>
+    <div class="row">
+      <label for="carb"><span>Carburant ou recharge (€)</span><small>Souvent 8 à 10 % du CA</small><input id="carb" type="number" inputmode="decimal" min="0" step="1" value="105"></label>
+      <label for="frais"><span>Autres frais : repas, péage, parking, lavage (€)</span><input id="frais" type="number" inputmode="decimal" min="0" step="1" value="81"></label>
+      <label for="fixes"><span>Charges fixes de la période : assurance, rattachement, location (€)</span><input id="fixes" type="number" inputmode="decimal" min="0" step="1" value="37"></label>
+      <label for="statut"><span>Cotisations ou provision (% du CA)</span><small>21,2 % URSSAF + formation pour un auto-entrepreneur ; 0 si rattaché</small><input id="statut" type="number" inputmode="decimal" min="0" step="0.1" value="21.3"></label>
+    </div>
+  </fieldset>
+  <div class="res" aria-live="polite">
+    <p class="k">Ta rentabilité</p>
+    <p id="r-net" class="big">—</p>
+    <p class="sub">de revenu net sur la période</p>
+    <div id="r-kpis" class="kpis"></div>
+    <p id="r-msg" class="msg"></p>
+    <div class="go">
+      <p>Ce calcul, VTC Rentable le fait chaque jour pour toi, à partir de ta journée notée en une minute.</p>
+      <a class="btn" href="/vtc-pro-acces/">Suivre ma rentabilité gratuitement</a>
+    </div>
+  </div>
+  <p class="note" style="margin-top:12px">Résultat indicatif. Tes chiffres restent sur ton appareil : rien n'est envoyé.</p>
+</form>
+<h2>Comment lire le résultat</h2>
+<p><strong>Le € / heure brut</strong> divise ce que tu as encaissé par tes heures. C'est le chiffre que tu compares d'une semaine à l'autre et entre plateformes. <strong>Le € / heure net</strong> fait la même division sur ce qu'il te reste après tes frais et tes charges : c'est ce que ton heure te rapporte vraiment.</p>
+<p><strong>Le € / km</strong> montre si tu roules pour rien. Une course bien payée qui te fait revenir à vide de loin fait chuter ce chiffre. Avant d'accepter une course, vérifie-la avec le <a href="/vtc-pro-acces/site/calculateurs/prix-minimum-course-vtc/">calculateur de prix minimum</a>.</p>
+<div class="box"><p><strong>Exemple :</strong> 1 150 € encaissés en 48 h et 1 340 km, 105 € de carburant (9 % du CA), 81 € d'autres frais, 37 € d'assurance et 21,3 % de cotisations. Il reste 682 € : 24 € de l'heure en brut, 14 € en net, et 0,51 € net par km.</p></div>
+<p>Pour le calcul complet selon ton statut (ACRE, versement libératoire, société, rattachement), utilise le <a href="/vtc-pro-acces/site/calculateurs/revenu-net-vtc/">calculateur de revenu net VTC</a>.</p>
+<div class="cta">
+  <strong>Essaie VTC Rentable, c'est gratuit.</strong>
+  <p>Note ta journée en une minute et vois ton revenu net, ton € / heure et ton € / km.</p>
+  <a class="btn" href="/vtc-pro-acces/">Créer mon compte gratuit</a>
+</div>
+<h2>Questions fréquentes</h2>
+<h3>Comment calculer son € / heure de chauffeur VTC ?</h3>
+<p>Divise ce que tu as encaissé par tes heures travaillées pour le brut. Pour le net, retire d&#x27;abord ton carburant, tes frais, tes charges fixes et tes cotisations, puis divise par les mêmes heures.</p>
+<h3>Quelle part du chiffre d&#x27;affaires part dans le carburant ?</h3>
+<p>Le plus souvent entre 8 et 10 % du chiffre d&#x27;affaires pour une hybride. Note tes pleins pendant quelques semaines pour connaître ta vraie part.</p>
+<h3>Faut-il compter les heures d&#x27;attente ?</h3>
+<p>Oui. Une heure connecté sans course reste une heure de travail : la compter donne un € / heure réaliste.</p>
+</article>
+<section class="more read" aria-labelledby="more-t">
+  <h2 id="more-t">Pour aller plus loin</h2>
+  <div class="cards">
+<a class="card" href="/vtc-pro-acces/site/blog/devenir-chauffeur-vtc/" data-cat="Démarrer"><small class="cat">Démarrer · 4 novembre 2026</small><b>Devenir chauffeur VTC en 2026 : le guide étape par étape</b><span>Les étapes, l&#x27;examen, les papiers et le budget pour démarrer, dans le bon ordre.</span></a>
+<a class="card" href="/vtc-pro-acces/site/calculateurs/"><b>Calculateurs gratuits</b><span>Revenu net, prix minimum d'une course, coût de la voiture, statuts : en quelques secondes.</span></a>
+<a class="card" href="/vtc-pro-acces/site/blog/"><b>Le blog des chauffeurs VTC</b><span>Réglementation, charges, statut et rentabilité, expliqués simplement.</span></a>
+  </div>
+</section>
+</main>
+<script src="/vtc-pro-acces/site/assets/calc-rentabilite.js" defer></script>
+<footer>
+  <div class="wrap">
+    <span>© 2026 VTC Rentable</span>
+    <nav aria-label="Liens utiles">
+      <a href="/vtc-pro-acces/site/">Accueil</a>
+      <a href="/vtc-pro-acces/site/calculateurs/">Calculateurs</a>
+      <a href="/vtc-pro-acces/site/blog/">Blog</a>
+      <a href="/vtc-pro-acces/site/modeles/">Modèles gratuits</a>
+      <a href="/vtc-pro-acces/site/application-vtc/">Application VTC</a>
+      <a href="/vtc-pro-acces/site/qui-sommes-nous/">Qui sommes-nous</a>
+      <a href="/vtc-pro-acces/">Ouvrir l'appli</a>
+      <a href="/vtc-pro-acces/mentions-legales.html">Mentions légales</a>
+      <a href="mailto:contact@vtcrentable.com">contact@vtcrentable.com · réponse sous 24 h</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

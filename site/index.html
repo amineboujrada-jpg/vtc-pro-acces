@@ -134,7 +134,7 @@
      "name": "Combien gagne vraiment un chauffeur VTC ?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Ça dépend de tes heures, de ta voiture et de ton statut, et le montant affiché par les plateformes n'est pas ce qu'il te reste. Dans l'exemple plus haut, 1 150 € encaissés donnent 577 € une fois les frais retirés, pour 48 h de travail. Le plus fiable reste de noter tes propres chiffres pour connaître ton net réel."
+      "text": "Ça dépend de tes heures, de ta voiture et de ton statut, et le montant affiché par les plateformes n'est pas ce qu'il te reste. Dans l'exemple plus haut, 1 150 € encaissés donnent 682 € une fois les frais retirés, pour 48 h de travail. Le plus fiable reste de noter tes propres chiffres pour connaître ton net réel."
      }
     },
     {
@@ -243,6 +243,33 @@ nav.top .btn { padding: 10px 14px; font-size: 14px; }
 .tile.tot b { color: var(--night-net); }
 .scr-fab { margin: 12px auto 0; width: max-content; background: var(--amber); color: var(--amber-fg); font-size: 11.5px; font-weight: 700; padding: 9px 14px; border-radius: 999px; }
 .scr-pad { height: 16px; }
+.gains { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 10px; font-size: 16.5px; }
+.gains li { display: flex; gap: 10px; align-items: baseline; }
+.gains li::before { content: "✓"; font-weight: 800; color: var(--amber); }
+.gains b { color: var(--night-fg); }
+.phone.real { padding: 12px 12px 0; }
+.phone.real img { display: block; width: 100%; height: auto; border-radius: 28px 28px 0 0; }
+.shots { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 260px); gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 18px; margin: 0 -2px; }
+.shot { scroll-snap-align: start; margin: 0; display: grid; gap: 10px; align-content: start; }
+.shot img { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 10px 30px -18px rgba(15,17,22,.45); }
+.shot figcaption b { display: block; font-size: 15.5px; } .shot figcaption span { color: var(--muted); font-size: 14px; }
+.demo-note { color: var(--muted); font-size: 13px; margin-top: 4px; }
+.quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.quote { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 14px; align-content: space-between; }
+.quote p { font-size: 18px; line-height: 1.5; margin: 0; } .quote p::before { content: "« "; } .quote p::after { content: " »"; }
+.quote .who { color: var(--muted); font-size: 14px; } .quote .who b { color: var(--fg); display: block; font-size: 15px; }
+.avis-cta { margin-top: 18px; color: var(--muted); font-size: 15px; } .avis-cta a { color: var(--accent); font-weight: 600; }
+.trust { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.trust div { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 8px; align-content: start; }
+.trust .ic { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; background: color-mix(in srgb, var(--net) 14%, transparent); color: var(--net); }
+.trust h3 { font-size: 17px; font-weight: 800; } .trust p { color: var(--muted); font-size: 14.5px; margin: 0; }
+.trust-flow { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 0 0 28px; font: 600 13px/1.3 var(--f-num); color: var(--muted); }
+.trust-flow span { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 9px 14px; color: var(--fg); }
+.trust-flow i { font-style: normal; color: var(--net); }
+.support { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; border: 1px solid var(--night-line); border-radius: 16px; padding: 18px 22px; margin-top: 8px; }
+.support b { font-size: 17px; } .support a { color: var(--amber); font-weight: 700; } .support span { color: var(--night-muted); font-size: 14.5px; }
+@media (max-width: 900px) { .trust { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 680px) { .quotes, .trust { grid-template-columns: 1fr; } }
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; padding-block: 44px 0; gap: 8px; }
   .hero-text { padding-bottom: 30px; }
@@ -358,10 +385,10 @@ footer a { text-decoration: none; } footer a:hover { color: var(--night-fg); }
     <div class="wrap">
       <a class="logo" href="#top"><img src="icon-192.png" alt="" width="30" height="30">VTC <span>Rentable</span></a>
       <ul>
-        <li><a href="#fonctions">Ce que fait l'appli</a></li>
+        <li><a href="#demo">L'appli</a></li>
         <li><a href="#statut">Ton statut</a></li>
         <li><a href="#prix">Prix</a></li>
-        <li><a href="#faq">Questions</a></li>
+        <li><a href="/vtc-pro-acces/site/qui-sommes-nous/">Qui sommes-nous</a></li>
         <li><a href="/vtc-pro-acces/site/calculateurs/">Calculateurs</a></li>
         <li><a href="/vtc-pro-acces/site/blog/">Blog</a></li>
       </ul>
@@ -374,9 +401,14 @@ footer a { text-decoration: none; } footer a:hover { color: var(--night-fg); }
       <div class="hero-text">
         <h1><span class="eyebrow h1-kicker">Appli de gestion VTC pour les chauffeurs en France</span> Uber t'affiche ton chiffre d'affaires. <em>Ici, tu vois ce qu'il te reste.</em></h1>
         <p class="lead">Le soir, tu notes ce que t'ont rapporté Uber, Bolt, Heetch et tes courses privées. L'appli retire le carburant, l'assurance, l'URSSAF ou le rattachement et calcule ton revenu net de la semaine, ton € / heure et ton € / km.</p>
+        <ul class="gains">
+          <li><span><b>Ton vrai revenu net</b>, chaque semaine, charges et carburant déduits</span></li>
+          <li><span><b>Ton € / heure et ton € / km</b>, pour savoir quand et où rouler</span></li>
+          <li><span><b>Un bon de commande PDF</b> prêt en cas de contrôle</span></li>
+        </ul>
         <div class="ctas">
           <a class="btn btn-amber" href="/vtc-pro-acces/">Créer mon compte gratuit</a>
-          <a class="btn btn-ghost" href="#fonctions">Voir ce qu'elle fait</a>
+          <a class="btn btn-ghost" href="#demo">Voir l'appli en vrai</a>
         </div>
         <p class="small">Gratuit · sur iPhone, Android et ordinateur · marche sans réseau</p>
         <div class="plates" aria-label="Plateformes prises en charge">
@@ -384,27 +416,8 @@ footer a { text-decoration: none; } footer a:hover { color: var(--night-fg); }
         </div>
       </div>
 
-      <div class="phone" role="img" aria-label="Écran Jour de l'appli avec des chiffres d'exemple : net de la semaine 612 €, recettes du jour 287 €">
-        <div class="screen" aria-hidden="true">
-          <div class="scr-h"><span class="burger">☰</span><b>VTC<i>Rentable</i></b></div>
-          <div class="scr-tabs"><span class="on">Jour</span><span>Réservations</span><span>Stats</span></div>
-          <div class="scr-sum">
-            <div class="scr-card"><small>Semaine · net</small><strong>612 €</strong><em>19,40 € / h</em></div>
-            <div class="scr-card"><small>Novembre · net</small><strong>2 140 €</strong><em>0,71 € / km</em></div>
-          </div>
-          <div class="scr-alert">Vidange dans 800 km</div>
-          <div class="scr-h2">Recettes du jour</div>
-          <div class="scr-tiles">
-            <div class="tile">Uber<b>142 €</b></div>
-            <div class="tile">Bolt<b>68 €</b></div>
-            <div class="tile">Heetch<b>31 €</b></div>
-            <div class="tile">Privée<b>40 €</b></div>
-            <div class="tile">Pourboire<b>6 €</b></div>
-            <div class="tile tot">Total<b>287 €</b></div>
-          </div>
-          <div class="scr-fab">＋ Ajouter une dépense</div>
-          <div class="scr-pad"></div>
-        </div>
+      <div class="phone real">
+        <img src="/vtc-pro-acces/site/assets/captures/jour.webp" width="780" height="1688" alt="Écran Jour de VTC Rentable : revenu net de la semaine et du mois, recettes Uber, Bolt et Heetch du jour (données de démonstration)" fetchpriority="high">
       </div>
     </div>
   </div>
@@ -415,21 +428,73 @@ footer a { text-decoration: none; } footer a:hover { color: var(--night-fg); }
     <div class="wrap ex">
       <div class="ex-text">
         <p class="eyebrow">Calcul du revenu net VTC</p>
-        <h2 style="font-size:clamp(28px,4vw,44px);line-height:1.06;font-weight:800">Une semaine type : 1 150 € encaissés, 577 € gagnés.</h2>
+        <h2 style="font-size:clamp(28px,4vw,44px);line-height:1.06;font-weight:800">Une semaine type : 1 150 € encaissés, 682 € gagnés.</h2>
         <p>Les plateformes montrent ce qu'elles te versent. Elles ne parlent jamais du plein, des cotisations URSSAF ou de l'assurance qui tombe chaque mois. C'est pour ça que beaucoup de chauffeurs pensent gagner plus que la réalité.</p>
         <p>VTC Rentable fait le calcul à ta place, semaine après semaine, avec tes vrais chiffres.</p>
       </div>
       <div class="bill" aria-label="Exemple de semaine">
         <div class="cap">Exemple · auto-entrepreneur</div>
         <div class="row"><span>Uber, Bolt, Heetch et privées</span><span class="num">1 150 €</span></div>
-        <div class="row minus"><span>Carburant</span><span class="num">− 210 €</span></div>
+        <div class="row minus"><span>Carburant (9 % du CA)</span><span class="num">− 105 €</span></div>
         <div class="row minus"><span>Repas et cafés</span><span class="num">− 45 €</span></div>
         <div class="row minus"><span>Cotisations URSSAF (21,3 %)</span><span class="num">− 245 €</span></div>
         <div class="row minus"><span>Assurance (160 € par mois)</span><span class="num">− 37 €</span></div>
         <div class="row minus"><span>Péage, parking, lavage</span><span class="num">− 36 €</span></div>
-        <div class="row tot"><span>Il te reste</span><span class="num">577 €</span></div>
-        <p class="hint">Pour 48 h de travail, soit 12 € de l'heure, et 0,43 € par km sur 1 340 km.</p>
+        <div class="row tot"><span>Il te reste</span><span class="num">682 €</span></div>
+        <p class="hint">Pour 48 h de travail, soit 14 € net de l'heure, et 0,51 € net par km sur 1 340 km.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="block tight" id="demo">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">L'appli en vrai</p>
+        <h2>Les vrais écrans de VTC Rentable.</h2>
+        <p>Pas de maquette : ce sont les écrans de l'appli, tels que tu les verras sur ton téléphone.</p>
+      </div>
+      <div class="shots" tabindex="0" aria-label="Captures d'écran de l'appli, faire défiler">
+        <figure class="shot"><img src="/vtc-pro-acces/site/assets/captures/jour.webp" width="780" height="1688" loading="lazy" alt="Onglet Jour : recettes par plateforme, carburant, repas, heures et km"><figcaption><b>Ta journée</b><span>Recettes par plateforme, carburant, heures, km.</span></figcaption></figure>
+        <figure class="shot"><img src="/vtc-pro-acces/site/assets/captures/semaine.webp" width="780" height="1688" loading="lazy" alt="Détail de la semaine : revenu net, chiffre d'affaires, charges, euro par heure et par kilomètre"><figcaption><b>Le détail de ta semaine</b><span>Net, charges, € / heure, € / km, carburant.</span></figcaption></figure>
+        <figure class="shot"><img src="/vtc-pro-acces/site/assets/captures/stats.webp" width="780" height="1688" loading="lazy" alt="Onglet Stats : revenu net sur la période, moyennes, meilleur mois et meilleure semaine"><figcaption><b>Tes statistiques</b><span>Moyennes, meilleurs mois, semaines et jours.</span></figcaption></figure>
+        <figure class="shot"><img src="/vtc-pro-acces/site/assets/captures/reservation.webp" width="780" height="1688" loading="lazy" alt="Fiche de réservation avec le bouton Bon de commande PDF"><figcaption><b>Le bon de commande</b><span>Une réservation, un PDF prêt pour un contrôle.</span></figcaption></figure>
+        <figure class="shot"><img src="/vtc-pro-acces/site/assets/captures/depenses.webp" width="780" height="1688" loading="lazy" alt="Mes dépenses : rattachement, assurance et charges fixes de chaque semaine"><figcaption><b>Tes charges fixes</b><span>Rattachement, assurance, téléphone : comptés tout seuls.</span></figcaption></figure>
+      </div>
+      <p class="demo-note">Captures réalisées avec des données de démonstration.</p>
+    </div>
+  </section>
+
+  <section class="block tight" id="avis">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Ils l'utilisent</p>
+        <h2>Ce qu'en disent les chauffeurs.</h2>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote"><p>VTC Rentable a changé ma façon de voir mon activité. Je sais enfin ce que je gagne vraiment, et je gère mon activité beaucoup plus clairement.</p><div class="who"><b>Mohamed Amine</b>Chauffeur VTC et fondateur de VTC Rentable</div></blockquote>
+        <blockquote class="quote"><p>C'est efficace : je vois ma rentabilité et j'ai enfin la main dessus.</p><div class="who"><b>Jawad</b>Chauffeur VTC, utilisateur de l'appli</div></blockquote>
+      </div>
+      <p class="avis-cta">Tu utilises VTC Rentable ? <a href="mailto:contact@vtcrentable.com?subject=Mon%20avis%20sur%20VTC%20Rentable">Envoie-nous ton avis</a>, il pourra apparaître ici avec ton accord.</p>
+    </div>
+  </section>
+
+  <section class="block tight" id="donnees">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Tes données</p>
+        <h2>Tes chiffres restent à toi.</h2>
+        <p>Tes revenus, ce sont tes affaires. Voici où ils vont, et qui peut les voir : toi seul.</p>
+      </div>
+      <div class="trust-flow" aria-label="Chemin de tes données">
+        <span>Ton téléphone</span><i>→ chiffré (HTTPS) →</i><span>Serveur en Europe (Irlande)</span><i>→</i><span>Visible par toi seul</span>
+      </div>
+      <div class="trust">
+        <div><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>Toi seul y as accès</h3><p>Chaque compte ne lit que ses propres données : la règle est appliquée par le serveur, pas seulement par l'appli.</p></div>
+        <div><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/></svg></span><h3>Hébergées en Europe</h3><p>Stockage dans l'Union européenne (Irlande), conforme au RGPD.</p></div>
+        <div><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M9.5 5.5h9a1.5 1.5 0 0 1 1.5 1.5v9M17 19.5H6A1.5 1.5 0 0 1 4.5 18V7"/></svg></span><h3>Ni pub, ni revente</h3><p>Aucune publicité, aucun outil de suivi, aucune donnée vendue ou partagée.</p></div>
+        <div><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"/><path d="M5 19.5h14"/></svg></span><h3>Tu repars quand tu veux</h3><p>Export de tes données en un fichier, et suppression complète du compte sur simple demande.</p></div>
+      </div>
+      <p class="avis-cta">Le détail est dans la <a href="/vtc-pro-acces/confidentialite.html">politique de confidentialité</a>.</p>
     </div>
   </section>
 
@@ -616,7 +681,7 @@ footer a { text-decoration: none; } footer a:hover { color: var(--night-fg); }
         <details><summary>Le bon de commande suffit en cas de contrôle ?</summary><p>Il reprend les informations demandées pour une réservation préalable : client, date et heure de la commande, lieu de prise en charge, exploitant et chauffeur. L'heure de commande est enregistrée automatiquement et ne peut pas être modifiée. L'appli ne crée jamais de réservation sans vraie commande.</p></details>
         <details><summary>Qui voit mes chiffres ?</summary><p>Toi seul. Chaque compte est protégé par email et mot de passe, les données sont hébergées en Europe (Irlande), et la base n'autorise chaque chauffeur qu'à lire les siennes.</p></details>
         <details><summary>Comment calculer son revenu net de chauffeur VTC ?</summary><p>Pars de ton chiffre d'affaires sur toutes les plateformes, courses privées comprises. Retire tes frais (carburant, repas, péage, parking, lavage, assurance), puis les charges de ton statut : la part mise de côté en société, les cotisations URSSAF en auto-entrepreneur, la commission du rattachement en salarié. Divise ce qu'il reste par tes heures et tes km pour avoir ton € / heure et ton € / km. L'appli fait ce calcul chaque semaine avec tes saisies.</p></details>
-        <details><summary>Combien gagne vraiment un chauffeur VTC ?</summary><p>Ça dépend de tes heures, de ta voiture et de ton statut, et le montant affiché par les plateformes n'est pas ce qu'il te reste. Dans l'exemple plus haut, 1 150 € encaissés donnent 577 € une fois les frais retirés, pour 48 h de travail. Le plus fiable reste de noter tes propres chiffres pour connaître ton net réel.</p></details>
+        <details><summary>Combien gagne vraiment un chauffeur VTC ?</summary><p>Ça dépend de tes heures, de ta voiture et de ton statut, et le montant affiché par les plateformes n'est pas ce qu'il te reste. Dans l'exemple plus haut, 1 150 € encaissés donnent 682 € une fois les frais retirés, pour 48 h de travail. Le plus fiable reste de noter tes propres chiffres pour connaître ton net réel.</p></details>
         <details><summary>Quelles charges pour un chauffeur VTC auto-entrepreneur ?</summary><p>Les cotisations URSSAF sur ton chiffre d'affaires (21,2 % en 2026), réduites de 50 % ou 25 % si tu as l'ACRE, plus 1,7 % si tu as choisi le versement libératoire. S'y ajoutent tes frais de tous les jours : carburant, assurance, entretien, péage, parking. L'appli retire tout ça chaque semaine.</p></details>
         <details><summary>Les montants remplacent mon comptable ?</summary><p>Non. Ce sont des estimations à partir de tes saisies, pour piloter ton activité au jour le jour. Pour tes déclarations, ton comptable ou ton espace URSSAF font foi.</p></details>
       </div>
@@ -628,6 +693,7 @@ footer a { text-decoration: none; } footer a:hover { color: var(--night-fg); }
       <h2>Ce soir, après ta dernière course, note ta journée.</h2>
       <p>Une minute suffit, et à la fin de la semaine tu sais combien tu as vraiment gagné.</p>
       <a class="btn btn-amber" href="/vtc-pro-acces/">Créer mon compte gratuit</a>
+      <div class="support" id="contact"><b>Une question ?</b><a href="mailto:contact@vtcrentable.com">contact@vtcrentable.com</a><span>Réponse sous 24 h, par un chauffeur qui connaît le métier.</span></div>
     </div>
   </section>
 </main>
@@ -639,9 +705,15 @@ footer a { text-decoration: none; } footer a:hover { color: var(--night-fg); }
       <a href="/vtc-pro-acces/">Ouvrir l'appli VTC Rentable</a>
       <a href="/vtc-pro-acces/site/calculateurs/">Calculateurs pour chauffeurs VTC</a>
       <a href="/vtc-pro-acces/site/blog/">Blog pour chauffeurs VTC</a>
+      <a href="/vtc-pro-acces/site/application-vtc/">Application VTC</a>
+      <a href="/vtc-pro-acces/site/calculateur-rentabilite-vtc/">Calculateur de rentabilité VTC</a>
+      <a href="/vtc-pro-acces/site/gestion-depenses-vtc/">Gestion des dépenses VTC</a>
+      <a href="/vtc-pro-acces/site/rentabilite-uber-bolt/">Rentabilité Uber et Bolt</a>
+      <a href="/vtc-pro-acces/site/logiciel-vtc-gratuit/">Logiciel VTC gratuit</a>
+      <a href="/vtc-pro-acces/site/qui-sommes-nous/">Qui sommes-nous</a>
       <a href="/vtc-pro-acces/mentions-legales.html">Mentions légales</a>
       <a href="/vtc-pro-acces/confidentialite.html">Politique de confidentialité</a>
-      <a href="mailto:contact@vtcrentable.com">contact@vtcrentable.com</a>
+      <a href="mailto:contact@vtcrentable.com">contact@vtcrentable.com · réponse sous 24 h</a>
     </nav>
   </div>
 </footer>
