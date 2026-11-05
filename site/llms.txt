@@ -23,6 +23,7 @@ Tous les contenus sont en français et concernent la réglementation et la fisca
 - [Objectif de chiffre d'affaires VTC](https://vtcrentable.com/calculateurs/objectif-chiffre-affaires-vtc/): chiffre d'affaires à réaliser pour atteindre un revenu net cible
 - [Seuil de TVA VTC](https://vtcrentable.com/calculateurs/seuil-tva-vtc/): suivi du seuil de franchise en base de TVA
 - [Comparateur de plateformes VTC](https://vtcrentable.com/calculateurs/comparateur-plateformes-vtc/): commissions Uber, Bolt, Heetch et FreeNow
+- [Indemnités kilométriques VTC](https://vtcrentable.com/calculateurs/indemnites-kilometriques-vtc/): barème kilométrique 2026 et gain selon le statut (rattachement, SASU, auto-entrepreneur)
 
 ## Guides
 
@@ -31,6 +32,11 @@ Tous les contenus sont en français et concernent la réglementation et la fisca
 - [Charges d'un chauffeur VTC auto-entrepreneur en 2026](https://vtcrentable.com/blog/charges-chauffeur-vtc-auto-entrepreneur/): cotisations URSSAF, ACRE, versement libératoire et plafonds
 - [Calcul du revenu net VTC](https://vtcrentable.com/blog/calcul-revenu-net-vtc/): méthode de calcul pas à pas avec un exemple chiffré
 - [Salaire d'un chauffeur VTC en 2026](https://vtcrentable.com/blog/salaire-chauffeur-vtc/): net réel par mois et par heure, trois exemples chiffrés et chiffres officiels Uber
+- [Indemnités kilométriques VTC](https://vtcrentable.com/blog/indemnites-kilometriques-vtc/): qui a droit au barème kilométrique selon son statut
+- [Frais réels en rattachement](https://vtcrentable.com/blog/frais-reels-chauffeur-vtc-rattachement/): frais réels ou déduction de 10 % pour un chauffeur VTC salarié
+- [SASU VTC et indemnités kilométriques](https://vtcrentable.com/blog/sasu-vtc-indemnites-kilometriques/): voiture personnelle avec indemnités ou voiture de société
+- [Barème kilométrique 2026](https://vtcrentable.com/blog/bareme-kilometrique-2026-vtc/): tableau complet, majoration électrique et exemples à 50 000 km
+- [Relevé kilométrique VTC](https://vtcrentable.com/blog/releve-kilometrique-vtc/): justifier ses kilomètres en cas de contrôle
 - [Bon de commande VTC](https://vtcrentable.com/blog/bon-de-commande-vtc/): obligation de réservation préalable et contenu du bon
 
 ## Optional
