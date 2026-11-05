@@ -21,7 +21,7 @@
     msg.className = "m-msg"; msg.textContent = "";
     if (nom.length < 2) return erreur("Indique ton nom et ton prénom.");
     if (tel.replace(/[^0-9+]/g, "").length < 6) return erreur("Vérifie ton numéro de téléphone.");
-    if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return erreur("Vérifie ton adresse e-mail, ou laisse le champ vide.");
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return erreur("Vérifie ton adresse e-mail.");
     if (ville.length < 2) return erreur("Indique la ville où tu travailles.");
     if (!$("s-ok").checked) return erreur("Coche la case de consentement pour qu'on puisse te recontacter.");
 
@@ -30,7 +30,7 @@
       method: "POST",
       headers: { "apikey": CLE, "Content-Type": "application/json", "Prefer": "return=minimal" },
       body: JSON.stringify({
-        nom: nom, telephone: tel, email: email || null, ville: ville,
+        nom: nom, telephone: tel, email: email, ville: ville,
         message: message || null, consentement: true, source: location.hostname + location.pathname
       })
     }).then(function (r) {

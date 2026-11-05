@@ -7,7 +7,7 @@ Tous les contenus sont en français et concernent la réglementation et la fisca
 ## Application
 
 - [Application VTC gratuite](https://vtcrentable.com/application-vtc/): suivi quotidien du chiffre d'affaires, des dépenses, des heures et des kilomètres, avec calcul automatique du revenu net
-- [Site vitrine chauffeur VTC avec réservation](https://vtcrentable.com/site-vitrine-chauffeur-vtc/): option à 20 € par mois sans engagement, site à son nom, réservation en ligne, bon de commande automatique et référencement local
+- [Site vitrine chauffeur VTC avec réservation](https://vtcrentable.com/site-vitrine-chauffeur-vtc/): option à 19,99 € par mois sans engagement, site à son nom, réservation en ligne, bon de commande automatique et référencement local
 - [Logiciel VTC gratuit](https://vtcrentable.com/logiciel-vtc-gratuit/): présentation de l'outil de gestion pour chauffeurs indépendants, utilisable sur téléphone et ordinateur
 - [Gestion des dépenses VTC](https://vtcrentable.com/gestion-depenses-vtc/): carburant, assurance, entretien, charges fixes et contrôle des virements des plateformes
 - [Rentabilité Uber et Bolt](https://vtcrentable.com/rentabilite-uber-bolt/): mesurer ce que rapporte réellement chaque plateforme après commissions et charges
