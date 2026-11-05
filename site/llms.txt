@@ -38,6 +38,7 @@ Tous les contenus sont en français et concernent la réglementation et la fisca
 - [SASU VTC et indemnités kilométriques](https://vtcrentable.com/blog/sasu-vtc-indemnites-kilometriques/): voiture personnelle avec indemnités ou voiture de société
 - [Barème kilométrique 2026](https://vtcrentable.com/blog/bareme-kilometrique-2026-vtc/): tableau complet, majoration électrique et exemples à 50 000 km
 - [Relevé kilométrique VTC](https://vtcrentable.com/blog/releve-kilometrique-vtc/): justifier ses kilomètres en cas de contrôle
+- [Tableur ou application VTC](https://vtcrentable.com/blog/tableur-ou-application-vtc/): pourquoi un tableur ne suffit plus, avec un tableau comparatif point par point
 - [Bon de commande VTC](https://vtcrentable.com/blog/bon-de-commande-vtc/): obligation de réservation préalable et contenu du bon
 
 ## Optional
