@@ -2,7 +2,7 @@
    Pour l'activer : remplace la valeur de GA_ID par ton identifiant de mesure (G-XXXXXXXXXX). Vide = rien n'est chargé. */
 (function () {
   "use strict";
-  var GA_ID = "";
+  var GA_ID = "G-4WV1YZM1PJ";
   if (!GA_ID || /^G-X+$/.test(GA_ID)) return;
   if (location.hostname !== "vtcrentable.com") return;   // pas de mesure sur la copie github.io
 
